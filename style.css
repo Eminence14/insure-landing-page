@@ -29,6 +29,7 @@ body {
 }
 .headings {
     font-family: dm-serif, serif;
+    font-weight: 400;
 }
 .small-text {
     font-size: .9em;
@@ -42,6 +43,14 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 30px 20px;
+}
+.view-plans {
+    color: var(--lightGray);
+    font-size: .75em;
+    height: 40px;
+    width: 45%;
+    border: 1px solid var(--lightGray);
+    cursor: pointer;
 }
 nav, #close {
     display: none;
@@ -59,17 +68,14 @@ nav, #close {
 }
 #desc {
     color: var(--lightGray);
-    padding: 70px 37px;
+    padding: 100px 37px;
     background-color: var(--darkViolet);
-    background-image: url('/images/bg-pattern-intro-left-mobile.svg'), url('./images/bg-pattern-intro-right-mobile.svg');
-    background-position-x: left, right;
-    background-position-y: top, 260px;
-    /* background-position-y: top, 330%; */
+    background-image: url('/images/bg-pattern-intro-left-mobile.svg'), url('/images/bg-pattern-intro-right-mobile.svg');
+    background-position: left top, right 230%;
     background-repeat: no-repeat;
 }
 #desc .headings {
     font-size: 2.5em;
-    font-weight: 400;
     line-height: .9;
     margin-bottom: 15px;
 }
@@ -77,19 +83,10 @@ nav, #close {
     line-height: 1.7;
     margin-bottom: 20px;
 }
-#desc .view-plans {
-    color: var(--lightGray);
-    font-size: .75em;
-    height: 40px;
-    width: 45%;
-    border: 1px solid var(--lightGray);
-}
 section#section-b {
     padding: 100px 35px;
-    background-image: url('./images/bg-pattern-intro-right-mobile.svg');
-    background-repeat: no-repeat;
-    background-position: right -150px;
-    /* background-position: right -34%; */
+    /* background: url('/images/bg-pattern-intro-right-mobile.svg') no-repeat;
+    background-position: right -33.5%; */
 }
 #section-b hr {
     width: 45%;
@@ -97,4 +94,76 @@ section#section-b {
     margin: 0 auto;
     background-color: var(--darkGrayViolet);
     margin-bottom: 40px;
+}
+#section-b h2.headings {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: var(--veryDarkViolet);
+}
+#section-b h3.headings {
+    font-size: 1.5em;
+    margin: 30px 0 20px;
+    color: var(--darkViolet);
+}
+#section-b p.small-text {
+    color:var(--darkGrayViolet) ;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+#section-c {
+    background-color: var(--darkViolet);
+    color: white;
+    margin: 0 20px;
+    padding: 75px 30px;
+    background-image: url('/images/bg-pattern-how-we-work-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-bottom: 100px;
+}
+#section-c h2.headings {
+    font-size: 2.5em;
+    line-height: 1em;
+    margin-bottom: 30px;
+}
+#section-c .view-plans {
+    width: 55%;
+}
+footer {
+    background-color: var(--lightGray);
+    padding: 100px 0;
+    background-image: url('/images/bg-pattern-footer-mobile.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+footer #top > img {
+    margin-bottom: 20px;
+}
+#icons img:not(:first-child) {
+    margin-left: .7em;
+}
+#icons img {
+    width: 20px;
+}
+footer hr {
+    width: 85%;
+    height: 1px;
+    background-color: var(--darkGrayViolet);
+    margin: 20px auto 30px;
+    opacity: .5;
+}
+footer #bottom * {
+    text-transform: uppercase;
+}
+#bottom .foot-col {
+    margin-bottom: 40px;
+}
+#bottom li.foot-head {
+    color: var(--darkGrayViolet);
+    margin-bottom: 30px;
+}
+#bottom li.foot-body {
+    color: var(--darkViolet);
+    margin-bottom: 15px;
+    font-weight: 700;
+    cursor: pointer;
 }
