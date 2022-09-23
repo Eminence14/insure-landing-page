@@ -1,0 +1,100 @@
+:root {
+    --darkViolet: hsl(256, 26%, 20%);
+    --grayBlue: hsl(216, 30%, 68%);
+    --veryDarkViolet: hsl(270, 9%, 17%);
+    --darkGrayViolet: hsl(273, 4%, 51%);
+    --lightGray: hsl(0, 0%, 98%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: none;
+    border: none;
+    list-style-type: none;
+}
+@font-face {
+    font-family: Karla;
+    src: url('/font/Karla/static/Karla-Regular.ttf');
+}
+@font-face {
+    font-family:dm-serif;
+    src: url('/font/DM_Serif_Display/DMSerifDisplay-Regular.ttf');
+}
+body {
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+    text-align: center;
+}
+.headings {
+    font-family: dm-serif, serif;
+}
+.small-text {
+    font-size: .9em;
+}
+.view-plans {
+    text-transform: uppercase;
+    font-size: .9em;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+nav, #close {
+    display: none;
+}
+#hamburger.active {
+    display: none;
+}
+#close.active {
+    display: block;
+}
+#intro-mob {
+    width: 100%;
+    position: relative;
+    top: 4px;
+}
+#desc {
+    color: var(--lightGray);
+    padding: 70px 37px;
+    background-color: var(--darkViolet);
+    background-image: url('/images/bg-pattern-intro-left-mobile.svg'), url('./images/bg-pattern-intro-right-mobile.svg');
+    background-position-x: left, right;
+    background-position-y: top, 260px;
+    /* background-position-y: top, 330%; */
+    background-repeat: no-repeat;
+}
+#desc .headings {
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: .9;
+    margin-bottom: 15px;
+}
+#desc .small-text {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+#desc .view-plans {
+    color: var(--lightGray);
+    font-size: .75em;
+    height: 40px;
+    width: 45%;
+    border: 1px solid var(--lightGray);
+}
+section#section-b {
+    padding: 100px 35px;
+    background-image: url('./images/bg-pattern-intro-right-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: right -150px;
+    /* background-position: right -34%; */
+}
+#section-b hr {
+    width: 45%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: var(--darkGrayViolet);
+    margin-bottom: 40px;
+}
