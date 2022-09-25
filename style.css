@@ -64,7 +64,7 @@ nav, #close {
 #intro-mob {
     width: 100%;
     position: relative;
-    top: 4px;
+    top: 7px;
 }
 #desc {
     color: var(--lightGray);
@@ -79,14 +79,16 @@ nav, #close {
     line-height: .9;
     margin-bottom: 15px;
 }
+#desc .view-plans:hover, #section-c .view-plans:hover {
+    color: var(--veryDarkViolet);
+    background-color: var(--lightGray);
+}
 #desc .small-text {
     line-height: 1.7;
     margin-bottom: 20px;
 }
 section#section-b {
     padding: 100px 35px;
-    /* background: url('/images/bg-pattern-intro-right-mobile.svg') no-repeat;
-    background-position: right -33.5%; */
 }
 #section-b hr {
     width: 45%;
@@ -142,7 +144,11 @@ footer #top > img {
     margin-left: .7em;
 }
 #icons img {
+    cursor: pointer;
     width: 20px;
+}
+#icons img:hover {
+    /* fill: var(--veryDarkViolet); */
 }
 footer hr {
     width: 85%;
@@ -166,4 +172,171 @@ footer #bottom * {
     margin-bottom: 15px;
     font-weight: 700;
     cursor: pointer;
+}
+#bottom li.foot-body:hover {
+    text-decoration: underline;
+}
+
+
+/* Tablet styles */
+@media screen and (min-width: 850px) {
+    body {
+        font-size: 20px;
+    }
+    nav {
+        display: block;
+    }
+    nav a {
+        text-transform: uppercase;
+        margin-right: 20px;
+        color: var(--darkGrayViolet);
+    }
+    nav a:hover {
+        color: var(--veryDarkViolet);
+    }
+    nav .view-plans {
+        border-color: var(--darkViolet);
+        padding: 10px 20px;
+        color: var(--darkViolet);
+    }
+    nav .view-plans:hover {
+        background-color: var(--veryDarkViolet);
+        color: var(--lightGray);
+    }
+    #hamburger {
+        display: none;
+    }
+    #intro-mob {
+        height: 850px;
+    }
+    #desc {
+        padding: 100px;
+    }
+    #section-b hr {
+        width: 0;
+    }
+    #section-b h2.headings {
+        text-align: left;
+    }
+    #section-b .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .cards {
+        padding: 0 30px;
+    }
+    .cards:nth-child(1){
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .cards:nth-child(2){
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .cards:nth-child(3){
+        grid-column: 2/4;
+        grid-row: 2/3;
+        margin-top: -50px;
+    }
+    #section-c {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #section-c h2.headings {
+        text-align: left;
+        padding: 0 20px;
+    }
+    #section-c .view-plans {
+        width: 45%;
+    }
+    footer #bottom {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1300px) {
+    body {
+        font-size: 25px;
+    }
+    #section-a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    picture #intro-mob {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        width: 500px;
+        height: 650px;
+    }
+    #desc {
+        order: -1;
+        text-align: left;
+        padding-right: 630px;
+        height: 650px;
+        background-image: url('/images/bg-pattern-intro-left-desktop.svg'), url('/images/bg-pattern-intro-right-desktop.svg');
+        background-position-y: 300%, -200%;
+        background-position-x: left, right;
+    }
+    #desc hr {
+        width: 200px;
+        height: 1px;
+        background-color: var(--darkGrayViolet);
+        margin-bottom: 80px;
+    }
+    #desc .small-text {
+        margin: 30px 0;
+    }
+    #desc .view-plans {
+        width: 35%;
+    }
+    #section-b {
+        margin: 0 80px;
+    }
+    #section-b hr {
+        width: 200px;
+        height: 1px;
+        background-color: var(--darkGrayViolet);
+        margin:50px 0 30px;
+    }
+    #section-b .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .cards {
+        padding: 0;
+        text-align: left;
+    }
+     .cards:nth-child(1){
+        grid-column: 1/2;
+    }
+    .cards:nth-child(2){
+        margin-left: 20px;
+        grid-column: 2/3;
+    }
+    .cards:nth-child(3){
+        margin-left: 40px;
+        grid-column: 3/4;
+        margin-top: 0;
+        grid-row: 1/2;
+    }
+    footer #top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+    }
 }
