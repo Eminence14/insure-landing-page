@@ -253,6 +253,9 @@ footer #bottom * {
     #section-c .view-plans {
         width: 45%;
     }
+    footer {
+        background-image: url('./images/bg-pattern-footer-desktop.svg');
+    }
     footer #bottom {
         width: 85%;
         margin: 0 auto;
