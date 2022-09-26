@@ -235,8 +235,12 @@ footer #bottom * {
     body {
         font-size: 20px;
     }
+    header {
+        padding: 30px 20px;
+    }
     nav {
         display: block;
+        transform: scale(1);
     }
     nav a {
         text-transform: uppercase;
